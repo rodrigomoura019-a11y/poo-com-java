@@ -1,0 +1,30 @@
+## Aula 2
+-Final = modificador de acesso utilizado para tornar um elemento imutável ou não extensível (não pode ser alterado, sobrescrito ou herdada)
+-LocalDate (classe da API java.time) + .replaceAll (método da classe String) + .substring (método da classe String)
+
+    import java.time.LocalDate;
+    this.matricula = LocalDate.now().getYear() + cpf.replaceAll("\\D", "").substring(0, 5);
+
+-Enum = classe especial que restringe a criação de objetos a um conjunto fixo de instâncias pré-definidas
+
+    /*  --É assim que o Java lê o seu Enum nos bastidores:
+    *   public final class FormatoLivro {
+    *       public static final FormatoLivro PDF = new FormatoLivro();
+    *       public static final FormatoLivro EPUB = new FormatoLivro();
+    *        
+    *       --Construtor bloqueado (private) para ninguém fazer um 'new FormatoLivro()'
+    *       private FormatoLivro() {} 
+    *   }
+    */
+    public enum Formato {
+        EPUB,
+        PDF,
+        MOBI,
+        Folio,
+    }
+
+## Aula 4
+-BigDecimal = Usado para operações com precisão matemática como foco
+
+    import java.math.BigDecimal;
+    BigDecimal saldo = new BigDecimal(2034.320);
