@@ -14,5 +14,4 @@
 ## Tecnologias Utilizadas
 - Java openjdk 21.0.4
 - Git 2.53.0.windows.2
-- Github
 - Gemini 3.1 Pro
