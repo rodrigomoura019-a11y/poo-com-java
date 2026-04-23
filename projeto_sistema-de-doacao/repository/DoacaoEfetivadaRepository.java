@@ -14,12 +14,12 @@ public class DoacaoEfetivadaRepository {
         ItemDoacao item = doacao.item();
 
         if (item.getStatus() != Status.DISPONIVEL) {
-            System.out.println("Erro: A doação não pode ser concluída. O item já foi doado ou está reservado!");
+            System.out.println("Erro: A doação não pode ser concluída. O item não está disponível!");
             return;
         }
 
         this.doacoes.add(doacao);
-        item.setStatus(Status.DOADO);
+        item.setStatus(Status.ENTREGUE);
         System.out.println("Doação registrada com sucesso! Recibo Nº: " + doacao.id());
 
     }

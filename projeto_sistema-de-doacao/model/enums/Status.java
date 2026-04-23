@@ -1,9 +1,10 @@
 package model.enums;
 
 public enum Status {
-    DISPONIVEL("Disponivel"),
+    DISPONIVEL("Disponível"),
     RESERVADO("Reservado"),
-    DOADO("Doado");
+    ENTREGUE("Entregue"),
+    CANCELADO("Cancelado");
 
     private final String descricao;
 
