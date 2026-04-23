@@ -28,3 +28,13 @@
 
     import java.math.BigDecimal;
     BigDecimal saldo = new BigDecimal(2034.320);
+
+## Pesquisa Extra
+-Record = Objetos se comportam como transportadores de dados *DTOs*. Com dados que não mudam.
+
+    //transforma os atributos em *private final* + cria construtor + cria métodos de leitura com o nome do atributo
+    public record Pessoa(String nome, int idade) { 
+        // posso criar variáveis compartilhadas
+        // posso criar um construtor personalizado
+        // posso criar métodos 
+    }

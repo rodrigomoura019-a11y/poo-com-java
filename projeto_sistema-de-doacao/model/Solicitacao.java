@@ -1,3 +1,7 @@
+package model;
+
+import model.enums.Status;
+
 public class Solicitacao {
     private static int counter = 0;
     private final int id;
@@ -7,7 +11,8 @@ public class Solicitacao {
     private String justificativa;
     private Status status;
 
-    public Solicitacao(Beneficiario beneficiario, ItemDoacao item, int quantidade, String justificativa, Status status) {
+    public Solicitacao(Beneficiario beneficiario, ItemDoacao item, int quantidade, String justificativa,
+            Status status) {
         this.id = ++counter;
         this.beneficiario = beneficiario;
         this.item = item;
@@ -16,7 +21,7 @@ public class Solicitacao {
         this.status = status;
     }
 
-    public int getId(){
+    public int getId() {
         return this.id;
     }
 
@@ -36,8 +41,8 @@ public class Solicitacao {
         return this.justificativa;
     }
 
-    public Status getStatus() {
-        return this.status;
+    public String getStatus() {
+        return this.status.getDescricao();
     }
 
 }

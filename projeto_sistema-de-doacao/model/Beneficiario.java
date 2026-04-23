@@ -1,3 +1,8 @@
+package model;
+
+import model.enums.Prioridade;
+import model.enums.TipoDeBeneficiario;
+
 public class Beneficiario extends Usuario{
     private TipoDeBeneficiario tipo;
     private Prioridade prioridade;

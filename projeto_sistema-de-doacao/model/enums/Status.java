@@ -1,3 +1,5 @@
+package model.enums;
+
 public enum Status {
     DISPONIVEL("Disponivel"),
     RESERVADO("Reservado"),
@@ -5,7 +7,7 @@ public enum Status {
 
     private final String descricao;
 
-    private Status(String descricao){
+    private Status(String descricao) {
         this.descricao = descricao;
     }
 

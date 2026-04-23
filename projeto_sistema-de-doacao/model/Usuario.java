@@ -1,3 +1,5 @@
+package model;
+
 public class Usuario {
     // Doadores e Beneficiários têm o mesmo sitema de id
     private static int counter = 0;

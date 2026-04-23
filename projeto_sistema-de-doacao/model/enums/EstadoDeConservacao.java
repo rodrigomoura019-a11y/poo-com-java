@@ -1,5 +1,7 @@
+package model.enums;
+
 public enum EstadoDeConservacao {
-    
+
     NOVO("Novo"),
     BOM_ESTADO("Bom Estado"),
     USADO("Usado"),

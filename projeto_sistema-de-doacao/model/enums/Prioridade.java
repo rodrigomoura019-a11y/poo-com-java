@@ -1,3 +1,5 @@
+package model.enums;
+
 public enum Prioridade {
     ALTA("Alta"),
     MEDIA("Média"),
@@ -5,11 +7,11 @@ public enum Prioridade {
 
     private final String descricao;
 
-    private Prioridade(String descricao){
+    private Prioridade(String descricao) {
         this.descricao = descricao;
     }
 
-    public String getDescricao(){
+    public String getDescricao() {
         return this.descricao;
     }
 }
