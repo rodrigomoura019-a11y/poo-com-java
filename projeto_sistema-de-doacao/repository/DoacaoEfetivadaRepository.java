@@ -17,14 +17,14 @@ public class DoacaoEfetivadaRepository {
             System.out.println("Erro: A doação não pode ser concluída. O item já foi doado ou está reservado!");
             return;
         }
-        
+
         this.doacoes.add(doacao);
         item.setStatus(Status.DOADO);
         System.out.println("Doação registrada com sucesso! Recibo Nº: " + doacao.id());
 
     }
 
-    public List<DoacaoEfetivada> listarRecibos() {
+    public List<DoacaoEfetivada> listarDoacoesEfetivadas() {
         return this.doacoes;
     }
 }
