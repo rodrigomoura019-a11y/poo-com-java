@@ -7,19 +7,19 @@ public class Usuario {
     private String email;
     private String endereco;
 
-    public Usuario(String nome, String telefone, String endereco){
+    public Usuario(String nome, String telefone, String endereco) {
         this.id = ++counter;
         this.nome = nome;
         this.telefone = formatTelefone(telefone);
         this.endereco = endereco;
     }
 
-    public Usuario(String nome, String telefone, String endereco, String email){
-        this(nome, telefone , endereco);
+    public Usuario(String nome, String telefone, String endereco, String email) {
+        this(nome, telefone, endereco);
         this.email = email;
     }
 
-     public int getId() {
+    public int getId() {
         return id;
     }
 
@@ -64,5 +64,4 @@ public class Usuario {
         }
     }
 
-    
 }

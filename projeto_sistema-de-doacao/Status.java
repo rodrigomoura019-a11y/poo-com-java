@@ -1,3 +1,15 @@
 public enum Status {
-    DISPONIVEL, RESERVADO, DOADO;
+    DISPONIVEL("Disponivel"),
+    RESERVADO("Reservado"),
+    DOADO("Doado");
+
+    private final String descricao;
+
+    private Status(String descricao){
+        this.descricao = descricao;
+    }
+
+    public String getDescricao() {
+        return this.descricao;
+    }
 }

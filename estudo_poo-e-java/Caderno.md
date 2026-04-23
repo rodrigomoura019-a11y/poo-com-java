@@ -17,10 +17,10 @@
     *   }
     */
     public enum Formato {
-        EPUB,
-        PDF,
-        MOBI,
-        Folio,
+        EPUB(aqui é a chamada do construtor),
+        PDF(o que for colocado aqui é o mesmo que colocar no momento de instanciamento de uma classe),
+        MOBI(mas precisa de um atributo criado para cada elemento adicionado no parenteses),
+        Folio(e um construtor definido),
     }
 
 ## Aula 4
